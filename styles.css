@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.body {
+    display: block;
+    background-color: rgb(213, 219, 224);
+    min-width: 220px;
+}
+
+.logo {
+    display: block;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(194, 182, 182);
+    align-items: center;
+    min-height: 75px;
+    min-width: 220px;
+    position: fixed;
+    margin-right: 30px;
+    top: 0;
+    width: 100%;
+}
+
+.logo span{
+    color: rgb(123, 116, 116);
+    padding-left: 30px;
+    font-size: 30px;
+    margin: 0 0 0 0 ;
+}
+
+.navbar-menu {
+    display: block;
+}
+
+.navbar {
+    color: antiquewhite;
+    padding: 5px 5px;
+}
+
+.navbar-top {
+    display: flex;
+    list-style: none;
+    margin: 10px 10px;
+    justify-content: flex-end;
+}
+
+.navbar-item {
+    margin-right: 10px;
+}
+
+.navbar-item a {
+    color: rgb(67, 53, 46);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar-item a:hover {
+    background: rgb(147, 136, 122);
+    border-radius: 5px;
+}
+
+.main {
+    min-width: 220px;
+    min-height: 75px;
+}
+
+.about-wrapper {
+    background-color: rgb(190, 181, 159);
+}
+
+.about {
+    display: flex;
+    padding: 60px 0;
+    background-color: rgb(190, 181, 159);
+}
+
+.h-about { 
+    text-align: center;
+    margin: 0;
+    padding: 100px 0 0 0;
+}
+
+/* .h-about a {
+    font-family: 'Lora', serif;
+} */
+
+.text-with-pic {
+    display: block;
+}
+
+.text-with-pic p {
+    display: flex;
+    font-size: 20px;
+    margin: 0 20px 0 80px;
+}
+
+.mini-galery-about {
+    display: flex;
+    margin: 40px 30px 40px 80px;
+    justify-content: space-between;
+}
+
+.pic-about {
+    display: block;
+    margin: 10px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.pic-about img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 -10px 40px 0 rgb(123, 116, 116);
+}
+
+.item-3 img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 -10px 40px 0 rgb(123, 116, 116);
+}
+
+.my-pic {
+    margin: 0 80px;
+    max-width: 366px;
+    max-height: 366px;
+}
+
+.my-photo {
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 -10px 40px 0 rgb(123, 116, 116);
+}
+
+.education {
+    background-color: rgb(213, 210, 202);
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2vw;
+    margin-left: 20px ;
+}
+
+.prj-grid-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-item {
+    margin: 10px;
+    /* outline: black solid 1px; */
+}
+
+.grid-item p {
+    font-size: 17px;
+}
+
+.grid-item h3 {
+    font-size: 19px;
+}
+
+.h-edu {
+    text-align: center;
+    /* margin: 20px; */
+    padding: 15px;
+}
+
+.text-contacts ul{
+    margin: 10px;
+    padding: 15px;
+}
+
+.contacts {
+    background-color: rgb(190, 181, 159);
+    padding: 0px 10px 10px 10px;
+}
+
+.h-contacts {
+    text-align: center;
+    padding: 15px;
+}
+
+.text-contacts li{
+    padding: 10px;
+    outline: black solid 1px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: max-content;
+    background-color: rgb(230, 227, 219);
+}
+
+.footer {
+    padding: 13px;
+    background-color: rgb(194, 182, 182);
+}
+
+.footer-col {
+    text-align: center;
+}
+
+.footer-col a {
+    text-decoration: none;
+    /* color: rgb(235, 229, 226); */
+    /* font-size: 18px;
+    background-color: rgb(67, 53, 46);
+    padding: 4px;
+    border-radius: 7px; */
+}
+
+.projects {
+    background-color: rgb(207, 201, 185);
+}
+
+.h-prj{
+    text-align: center;
+    padding: 15px;
+}
+
+.grid-item a{
+    text-decoration: none;
+    color: rgb(67, 53, 46);
+    padding: 10px;
+}
+
+.grid-item p {
+    padding: 5px;
+}
+
+.grid-item a:hover {
+    background-color: rgb(147, 136, 122);
+    border-radius: 5px;
+}
+
+.collapsible {
+    background-color: rgb(207, 201, 185);
+    color: rgb(67, 53, 46);
+    cursor: pointer;
+    padding: 10px;
+    width: max-content;
+    border: none;
+    text-align: justify;
+    outline: none;
+    font-size: 16px;
+}
+
+.active, .collapsible:hover {
+    background-color: rgb(147, 136, 122);
+    border-radius: 5px;
+    
+}
+
+.bul-board-task {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(207, 201, 185);
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.invisible-text {
+    display: inline-block;
+    width: max-content;
+    outline: black solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+.prj-2-text{
+    display: inline-block;
+}
+
+
+/* @media (max-width: 1040px) {
+    .navbar {
+        display: none;
+    }
+    .navbar-top {
+        display: none;
+    }
+} */
+
+
+@media (max-width: 768px) {
+    .about {
+        display: block;
+        justify-content: center;
+    }
+    .about p {
+        margin: 20px 20px;
+    }
+    .my-pic {
+        display: block;
+        margin: 20px 20px;
+        justify-content: center;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar-top {
+        display: none;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .header {
+        display: block;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .h-about a {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 330px) {
+
+    .h-about a {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 200px) {
+    .h-about a {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 230px) {
+    .header {
+        display: block;
+        justify-content: center;
+    }
+    .h-about a {
+        padding-left: 0;
+        text-align: center;
+    }
+}
