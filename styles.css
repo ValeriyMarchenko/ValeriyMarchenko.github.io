@@ -370,3 +370,8 @@
         text-align: center;
     }
 }
+
+noscript {
+    text-align: center;
+    font-size: 20px;
+}
